@@ -24,7 +24,12 @@ app.get('/gallery', (req, res) => {
   res.render('gallery')
 })
 
-// GALLERY
+// BLOG
+app.get('/blog', (req, res) => {
+  res.render('blog')
+})
+
+// CONTACT
 app.get('/contact', (req, res) => {
   res.render('contact')
 })
