@@ -1,0 +1,11 @@
+<!-- testimonials-index -->
+<h1>Testimonials</h1>
+<div class="blog">
+  {{#each testimonial}}
+  <div class="col-sm-3">
+    <h2><a href="/testimonials/{{this._id}}">{{this.name}}</a></h2>
+    <small>{{this.description}}</small>
+  </div>
+  {{/each}}
+  <a href="/testimonials/new" class="btn btn-default">New Testimonial</a>
+</div>

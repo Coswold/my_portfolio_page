@@ -1,0 +1,13 @@
+<br><br><br><br>
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <h1>{{testimonial.name}}</h1>
+        <h3>{{testimonial.description}}</h3>
+        <p><a href="/testimonials/{{testimonial._id}}/edit">Edit</a></p>
+        <a href="/testimonial">Back</a>
+        <!-- DELETE BUTTON -->
+        <p><form method="POST" action="/testimonials/{{testimonial._id}}?_method=DELETE">
+            <button type="submit">Delete</button>
+        </form></p>
+    </div>
+</div>
